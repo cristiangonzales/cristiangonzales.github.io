@@ -18,15 +18,59 @@
 		<link href="css/index.css" rel="stylesheet" type="text/css" />
 		<link href="css/stupid.css" rel="stylesheet" type="text/css"/>
 		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-		<link rel="icon" href="css/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+		<link rel="icon" href="css/me.jpg" type="image/x-icon">
 		<title>Cristian Gonzales</title>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<style>
+			html {
+				background: url("css/nyc.jpg") no-repeat center center fixed;
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Welcome to my website!</h1>
-		<div>
-			<p>Check me out on <a href="https://github.com/cristiangonzales"><img src="css/octocat.png" width="20" height="20"></img></a></p>
-		</div>	
+		<h1 class="center">The Cristian Experience</h1>
+		<div class="container padded">
+			<a class="third compressible right link" href="https://github.com/cristiangonzales" target="_blank"><img src="css/octocat.png" width="20" height="20"></img></a>
+			<a class="third compressible center link" href="https://www.linkedin.com/in/cristiangonzales/" target="_blank"><img src="css/linkedin.svg" width="20" height="20"></img></a>
+			<a class="third compressible left link" href="mailto:xcristian.gonzales@gmail.com" target="_blank"><img src="css/gmail.png" width="20" height="20"></img></a>
+		</div>
+		<!-- TODO: Broken CSS
+		<style>
+			div .link:hover {
+				display:none;
+				position:fixed;
+				cursor:none;
+				color:transparent;
+				background-color:transparent;
+				text-decoration:none;
+				box-shadow:none;
+				transition:none;
+			}
+		</style>
+		-->
+		<div class="card center padded" style="width:500px; height:700px">
+			<div style="font-family: 'Zilla Slab';">
+				<div class="black padded rounded">
+					<p>My name is Cristian Gonzales, and I am currently a Computing Science student (rising senior) at the University of California,
+					Santa Cruz. I am currently interning at Northrop Grumman (Mission Systems). My interests lie in Data Science, more particularly 
+					in Data Visualization, Data Mining, Databases, and Machine Learning. I am also interested in general Software Development.</p>
+					<p>Outside of my work in the tech space, I am also interested in Security Analysis and Quantitative Finance. More particularly, I 
+					enjoy exploring the applications of Computing Science and Algorithms to Quantitative Finance. In my free time, I like to build 
+					things and valuate companies. Please feel free to reach out to me for any inquires.</p>
+				</div>
+				<div class="black padded rounded">
+					<iframe src="my_resume.pdf" content-type="application/pdf" width="100%" height="100%" frameborder="0">
+						<p>Your web browser does not support iFrame. You may view my resume <a href="my_resume.pdf" target="_blank">here</a>.</p>
+					</iframe>
+				</div>
+			</div>
+		</div>
+		<div></div>
 	</body>
 </html>
