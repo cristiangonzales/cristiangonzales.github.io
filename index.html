@@ -1,95 +1,107 @@
 <!DOCTYPE html>
 <!--
-	Licensed under the Apache License, Version 2.0 (the "License");
-	you may not use this file except in compliance with the License.
-	You may obtain a copy of the License at
+	Author: Cristian Gonzales
 
-	http://www.apache.org/licenses/LICENSE-2.0
-
-	Unless required by applicable law or agreed to in writing, software
-	distributed under the License is distributed on an "AS IS" BASIS,
-	WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	See the License for the specific language governing permissions and
-	limitations under the License.
 -->
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<link href="css/index.css" rel="stylesheet" type="text/css" />
-		<link href="css/stupid.css" rel="stylesheet" type="text/css"/>
-		<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
-		<link rel="icon" href="css/me.jpg" type="image/x-icon">
 		<title>Cristian Gonzales</title>
+		<link rel="icon" href="img/terminal.png" type="image/x-icon">
+		<link href="css/index.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="js/index.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<style>
-			html {
-				background: url("css/nyc.jpg") no-repeat center center fixed;
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
-		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<h1 class="center">The Cristian Experience</h1>
-		<div class="container padded">
-			<a class="third compressible right link" href="https://github.com/cristiangonzales" target="_blank"><img src="css/octocat.png" width="20" height="20"></img></a>
-			<a class="third compressible center link" href="https://www.linkedin.com/in/cristiangonzales/" target="_blank"><img src="css/linkedin.svg" width="20" height="20"></img></a>
-			<a class="third compressible left link" href="mailto:xcristian.gonzales@gmail.com" target="_blank"><img src="css/gmail.png" width="20" height="20"></img></a>
+		<div class="container space-mono center">
+			<h1>CRISTIAN GONZALES</h1>
 		</div>
-		<!-- TODO: Broken CSS
-		<style>
-			div .link:hover {
-				display:none;
-				position:fixed;
-				cursor:none;
-				color:transparent;
-				background-color:transparent;
-				text-decoration:none;
-				box-shadow:none;
-				transition:none;
-			}
-		</style>
-		-->
-		<div class="card center padded" style="width:500px; height:700px;">
-			<div style="font-family: 'Zilla Slab'; font-size:22.9px;">
-				<div class="black padded rounded">
-					<p>My name is Cristian Gonzales, and I am currently a Computing Science student (rising senior) at the University of California,
-					Santa Cruz. I am currently interning at Northrop Grumman (Mission Systems). My interests lie in Data Science, more particularly 
-					in Data Visualization, Data Mining, Databases, and Machine Learning. I am also interested in general Software Development.</p>
-					<p>Outside of my work in the tech space, I am also interested in Security Analysis and Quantitative Finance. More particularly, I 
-					enjoy exploring the applications of Computing Science and Algorithms to Quantitative Finance. In my free time, I like to build 
-					things and valuate companies. Please feel free to reach out to me for any inquiries.</p>
-					<hr />
-					<style>
-					// Brute-force hr tag
-					hr {
-						border: 0;
-						clear:both;
-						display:block;
-						width: 96%;               
-						background-color:#FFFF00;
-						height: 1px;
-					}
-					</style>
-					<p><u>Languages</u>: Ada, C, CSS, HTML, Java, JavaScript, MIPS Assembly, Python, SQL, Swift</p>
-					<p><u>Technologies</u>: Xcode (iOS Development), Android Studio (Android Development), Eclipse, Git, Linux, Unix</p>
+		<div class="container">
+			<div class="row">
+				<div class="col s4 center">
+					<a href="https://linkedin.com/in/cristiangonzales" target="_blank">
+						<img src="img/linkedin.png"></img>
+					</a>
 				</div>
-				<div class="black padded rounded">
-					<iframe src="my_resume.pdf" content-type="application/pdf" width="100%" height="100%" frameborder="0">
-						<p>Your web browser does not support iFrame. You may view my resume <a href="my_resume.pdf" target="_blank">here</a>.</p>
-					</iframe>
+				<div class="col s4 center">
+					<a href="mailto:xcristian.gonzales@gmail.com" target="_blank">
+						<img src="img/email.png"></img>
+					</a>
+				</div>
+				<div class="col s4 center">
+					<a href="https://github.com/cristiangonzales" target="_blank">
+						<img src="img/octocat.png"></img>
+					</a>
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<h4 class="padded white compressible center">Projects</h4>
+		<div class="container space-mono">
+			<div class="row center">
+				<h4>About</h4>
+			</div>
+			<div class="row">
+				<p>
+					My name is Cristian Gonzales, and I am currently an undergraduate Computing Science student at the University of
+					California, Santa Cruz. I have previously interned at Northrop Grumman (Mission Systems), and will be returning to
+					Northrop Grumman in Winter 2019 to work full-time as a Software Engineer.
+				</p>
+				<p>
+					My interests lie in Computer Security and Machine Learning. In my free time, I like to build things, valuate
+					companies, and occasionally play blackjack. I am currently only interested in open-source, pro-bono, and small
+					freelance opportunities at this time.
+				</p>
+			</div>
 		</div>
-		<div class="container">
-			<h4 class="padded white compressible center">Blog</h4>
+		<div class="container space-mono">
+			<div class="row center">
+				<h4>Projects</h4>
+			</div>
+			<div class="row">
+				<div class="card black darken-1 space-mono">
+					<div class="card-content white-text">
+						<span class="card-title">SwiftySuncalc</span>
+						<p>
+							SwiftySuncalc is a direct Swift port of the original suncalc.js microlibrary, as created by Vladimir
+							Agafonkin (<a class="grey-text" href="https://github.com/mourner/">@mourner</a>). Per the original
+							suncalc project README,
+							<blockquote style="border-left-color: white;">
+								SunCalc is a tiny BSD-licensed JavaScript library for calculating sun position, sunlight phases
+								(times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location
+								and time, created by Vladimir Agafonkin (@mourner) as a part of the SunCalc.net project.
+
+								Most calculations are based on the formulas given in the excellent Astronomy Answers articles
+								about position of the sun and the planets. You can read about different twilight phases calculated
+								by SunCalc in the Twilight article on Wikipedia.
+							</blockquote>
+						</p>
+					</div>
+					<div class="card-action">
+						<a class="grey-text" href="https://github.com/cristiangonzales/SwiftySuncalc" target="_blank">Link to GitHub repo</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container space-mono">
+			<div class="row center">
+				<h4>Resume</h4>
+			</div>
+			<div class="row center">
+				<iframe src="Cristian_Gonzales_Resume.pdf" content-type="application/pdf" width="100%" height="1100px" frameborder="0">
+					<p>Your web browser does not support iFrame. You may view my resume <a href="https://github.com/cristiangonzales/My_Resume/blob/master/Cristian_Gonzales_Resume.pdf" target="_blank">here</a>.</p>
+				</iframe>
+			</div>
+		</div>
+		<div class="container space-mono">
+			<div class="row center">
+				<h4>Blog</h4>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container center space-mono">
+		    © 2018 Cristian Gonzales
+			</div>
 		</div>
 	</body>
 </html>

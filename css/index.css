@@ -1,0 +1,11 @@
+/* Author: Cristian Gonzales
+ *
+ */
+
+/* Importing the Space Mono font to be used through the entire website */
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+.space-mono
+{
+    font-family: 'Space Mono', monospace;
+}
