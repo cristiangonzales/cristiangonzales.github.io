@@ -9,3 +9,11 @@
 {
     font-family: 'Space Mono', monospace;
 }
+
+.custom-col
+{
+    width: 20%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
