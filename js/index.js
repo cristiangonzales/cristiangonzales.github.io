@@ -27,8 +27,10 @@
 
 $(document).ready(function(){
   // Text to be dynamically "typed"
-  var titles = ["Software Engineer", "Fitness enthusiast",
-  "Finance hobbyist", "Tech blogger", "Blackjack player"];
+  var titles = ["Fitness enthusiast",
+  "Finance hobbyist", "Tech blogger", "Social Media Personality", "Software Engineer"];
+  // Our definition of a "second"
+  var oneSecond = 1200;
 
   /**
    * Recursive function that calls itself until it is finished "typing"
@@ -42,20 +44,51 @@ $(document).ready(function(){
   function titleWorkerFunc(text, charIndex, callback) {
     // The case where the title hasn't finished being "typed"
     if (charIndex < (text.length)) {
-      // Add the next character to the 
+      // Add the next character to the sequence
       $(".my-titles").html(
         text.substring(0, charIndex + 1) 
         + '<span aria-hidden="true"></span>'
       );
 
-      // wait for a while and call this function again for next character
+      // Wait for a while and call this function again for next character
       setTimeout(function() {
         titleWorkerFunc(text, charIndex + 1, callback)
-      }, 100);
+      }, 120);
     }
-    // The text has finished "typing", call the callback to instantiate
-    // the next function (if there is an existing callback as specified
-    // by the caller)
+    /**
+     * The text has finished "typing", call the callback to instantiate
+     * the next function (if there is an existing callback as specified
+     * by the caller)
+     * */
+    else {
+      setTimeout(function() {
+        titleWorkerBackwards(text, charIndex, callback);
+      }, oneSecond);
+    }
+  }
+
+  /**
+   * TODO: Docstrings...
+   * */
+  function titleWorkerBackwards(text, charIndex, callback) {
+    // The case where the title hasn't finished being "typed"
+    if (charIndex > 0) {
+      // Add the next character to the 
+      $(".my-titles").html(
+        text.substring(0, charIndex - 1) 
+        + '<span aria-hidden="true"></span>'
+      );
+
+      // Wait for a while and call this function again for next character
+      setTimeout(function() {
+        titleWorkerBackwards(text, charIndex - 1, callback)
+      }, 50);
+    }
+    /**
+     * The text has finished "typing", call the callback to instantiate
+     * the next function (if there is an existing callback as specified
+     * by the caller)
+     * */
     else if (typeof callback == 'function') {
       setTimeout(callback, 700);
     }
@@ -71,15 +104,25 @@ $(document).ready(function(){
    *
    * */
   function startTitleAnimation(titleIndex) {
-    // The case where we still have a valid title in the queue, so we 
-    // call the worker function, passing the callback containing the index
-    // of the next function
+    /**
+     * The case where we still have a valid title in the queue, so we 
+     * call the worker function, passing the callback containing the index
+     * of the next function
+     * */
     if (typeof titles[titleIndex] == 'string'){
       titleWorkerFunc(titles[titleIndex], 0, function(){
         startTitleAnimation(titleIndex + 1);
       });
+    /**
+     * The case where there are no more titles to display in the queue,
+     * so we fade out the "splashpage" and fade into the main landing
+     * div
+     * */
     } else {
-      // TODO
+      $("#welcome-splashpage").fadeOut(oneSecond);
+      setTimeout(function() {
+        $("#main").fadeIn(oneSecond);
+      }, oneSecond);
     }
   }
 

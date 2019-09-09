@@ -44,10 +44,31 @@
     font-family: 'Space Mono', monospace;
 }
 
+span {
+  border-right: .05em solid;
+  animation: caret 0.5s steps(10) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .custom-col
 {
     width: 20%;
     margin-left: auto;
     left: auto;
     right: auto;
+}
+
+#main
+{
+    display: none;
+}
+
+.bullet-pt
+{
+    margin-left: 50px;
 }

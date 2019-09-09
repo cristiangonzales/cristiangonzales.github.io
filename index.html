@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <!--
-	Author: Cristian Gonzales
+ MIT License
+
+ Copyright (c) 2019 Cristian Gonzales
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ 
+ 
+ Author: Cristian Gonzales
 -->
 <html>
 	<head>
@@ -8,93 +31,117 @@
 		<title>Cristian Gonzales</title>
 		<link rel="icon" href="img/terminal.png" type="image/x-icon">
 		<link href="css/index.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="js/index.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-    	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
 	</head>
 	<body>
-		<div class="container space-mono center">
-			<h1>CRISTIAN GONZALES</h1>
-		</div>
-		<div class="container">
-			<div class="row">
-				<div class="col custom-col center">
-					<a href="https://linkedin.com/in/cristiangonzales" target="_blank">
-						<img src="img/linkedin.png"></img>
-					</a>
-				</div>
-				<div class="col custom-col center">
-					<a href="My_Resume.pdf" target="_blank">
-						<img src="img/resume.png"></img>
-					</a>
-				</div>
-				<div class="col custom-col center">
-					<a href="https://medium.com/@xcristian.gonzales" target="_blank">
-						<img src="img/medium.png"></img>
-					</a>
-				</div>
-				<div class="col custom-col center">
-					<a href="mailto:xcristian.gonzales@gmail.com" target="_blank">
-						<img src="img/email.png"></img>
-					</a>
-				</div>
-				<div class="col custom-col center">
-					<a href="https://github.com/cristiangonzales" target="_blank">
-						<img src="img/octocat.png"></img>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="container space-mono">
-			<div class="row center">
-				<h4>About</h4>
-			</div>
-			<div class="row">
-				<p>
-					My name is Cristian, and I am currently a full-time Software Engineer at Northrop Grumman (Mission Systems), and I work at Space Park in
-          sunny Redondo Beach, California &#x2600 I completed my Bachelor's of Science degree in Computing Science student at the University of
-					California, Santa Cruz. I have previously interned at Northrop Grumman (Mission Systems).
-				</p>
-				<p>
-					In my free time, I like to build things, valuate companies, work-out, and occasionally play blackjack. For tech recruiters, I am currently 
-          interested in open-source, pro-bono, remote, and small freelance opportunities.
-				</p>
-			</div>
-		</div>
-		<div class="container space-mono">
-			<div class="row center">
-				<h4>Projects</h4>
-			</div>
-			<div class="row">
-				<div class="card black darken-1 space-mono">
-					<div class="card-content white-text">
-						<span class="card-title">SwiftySuncalc</span>
-						<p>
-							SwiftySuncalc is a direct Swift port of the original suncalc.js microlibrary, as created by Vladimir
-							Agafonkin (<a class="grey-text" href="https://github.com/mourner/">@mourner</a>). Per the original
-							suncalc project README,
-							<blockquote style="border-left-color: white;">
-								SunCalc is a tiny BSD-licensed JavaScript library for calculating sun position, sunlight phases
-								(times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location
-								and time, created by Vladimir Agafonkin (@mourner) as a part of the SunCalc.net project.
-
-								Most calculations are based on the formulas given in the excellent Astronomy Answers articles
-								about position of the sun and the planets. You can read about different twilight phases calculated
-								by SunCalc in the Twilight article on Wikipedia.
-							</blockquote>
-						</p>
-					</div>
-					<div class="card-action">
-						<a class="grey-text" href="https://github.com/cristiangonzales/SwiftySuncalc" target="_blank">Link to GitHub repo</a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container center space-mono">
-		    © 2018 Cristian Gonzales
-			</div>
-		</div>
+    <div id="welcome-splashpage">
+  		<div class="container space-mono center">
+  			<h1>Hi, I'm Cristian &#x1F44B</h1>
+  		</div>
+  		<div class="container space-mono">
+  			<div class="row center">
+  				<h4>Welcome to my website.</h4>
+  			</div>
+  			<div class="row center">
+  				<h5>I am a...</h5>
+  			</div>
+  			<div class="source-code-pro row center homebrew-green">
+          <h1>$  <span class="my-titles"></span></h1>
+  			</div>
+  		</div>
+    </div>
+    <div id="main">
+  		<div class="container space-mono center">
+  			<h1>CRISTIAN GONZALES</h1>
+  		</div>
+  		<div class="container">
+  			<div class="row">
+  				<div class="col custom-col center">
+  					<a href="https://linkedin.com/in/cristiangonzales" target="_blank">
+  						<img src="img/linkedin.png"></img>
+  					</a>
+  				</div>
+  				<div class="col custom-col center">
+  					<a href="My_Resume.pdf" target="_blank">
+  						<img src="img/resume.png"></img>
+  					</a>
+  				</div>
+  				<div class="col custom-col center">
+  					<a href="https://medium.com/@xcristian.gonzales" target="_blank">
+  						<img src="img/medium.png"></img>
+  					</a>
+  				</div>
+  				<div class="col custom-col center">
+  					<a href="mailto:xcristian.gonzales@gmail.com" target="_blank">
+  						<img src="img/email.png"></img>
+  					</a>
+  				</div>
+  				<div class="col custom-col center">
+  					<a href="https://github.com/cristiangonzales" target="_blank">
+  						<img src="img/octocat.png"></img>
+  					</a>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="container space-mono">
+  			<div class="row center">
+  				<h3>About</h3>
+  			</div>
+  			<div class="row">
+          <h5>My name is Cristian, and...</h5>
+          <p class="source-code-pro bullet-pt">> I am currently a full-time Software Engineer at Northrop Grumman (Mission Systems) &#x1F680</p>
+          <p class="source-code-pro bullet-pt">> I work at Space Park in sunny Redondo Beach, California &#x1F307</p>
+          <p class="source-code-pro bullet-pt">> I completed my Bachelor's of Science degree in Computing Science student at the University of California, Santa Cruz &#x1F393</p>
+          <p class="source-code-pro bullet-pt">> I have previously interned at Northrop Grumman (Mission Systems) &#x1F916</p>
+          <h5>In my free time, I like to...</h5>
+          <p class="source-code-pro bullet-pt">> build things &#x1F4BB</p>
+          <p class="source-code-pro bullet-pt">> valuate companies &#x1F4C8</p>
+          <p class="source-code-pro bullet-pt">> work-out &#x1F3CB</p>
+          <p class="source-code-pro bullet-pt">> YouTube &#x1F3A5</p>
+          <p class="source-code-pro bullet-pt">> Instagram &#x1F4FA</p>
+          <p class="source-code-pro bullet-pt">> volunteer &#x262E</p>
+          <h5>I am currently interested in...</h5>
+          <p class="source-code-pro bullet-pt">> open-source and pro-bono opportunities &#x1F4C2</p>
+          <p class="source-code-pro bullet-pt">> remote and small freelance opportunities &#x2708</p>
+  			</div>
+  		</div>
+  		<div class="container space-mono">
+  			<div class="row center">
+  				<h3>Open Source Contributions</h3>
+  			</div>
+  			<div class="row">
+  				<div class="card black darken-1 space-mono">
+  					<div class="card-content white-text">
+  						<span class="card-title">SwiftySuncalc</span>
+  						<p>
+  							SwiftySuncalc is a direct Swift port of the original suncalc.js microlibrary, as created by Vladimir
+  							Agafonkin (<a class="grey-text" href="https://github.com/mourner/">@mourner</a>). Per the original
+  							suncalc project README,
+  							<blockquote style="border-left-color: white;">
+  								SunCalc is a tiny BSD-licensed JavaScript library for calculating sun position, sunlight phases
+  								(times for sunrise, sunset, dusk, etc.), moon position and lunar phase for the given location
+  								and time, created by Vladimir Agafonkin (@mourner) as a part of the SunCalc.net project.
+  
+  								Most calculations are based on the formulas given in the excellent Astronomy Answers articles
+  								about position of the sun and the planets. You can read about different twilight phases calculated
+  								by SunCalc in the Twilight article on Wikipedia.
+  							</blockquote>
+  						</p>
+  					</div>
+  					<div class="card-action">
+  						<a class="grey-text" href="https://github.com/cristiangonzales/SwiftySuncalc" target="_blank">Link to GitHub repo</a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  		<div class="footer-copyright">
+  			<div class="container center space-mono">
+  		    © 2018 Cristian Gonzales
+  			</div>
+  		</div>
+    </div>
 	</body>
 </html>
